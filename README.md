@@ -146,7 +146,14 @@ no cloud account configuration or cached third-party papers are included.
 
 `docs/` contains the self-contained Polish-language interactive laboratory:
 an editable 36-slot schedule, deadline controls, a finite-state game, and a
-JavaScript certificate verifier running in a Web Worker. All asset references
+JavaScript certificate verifier running in a Web Worker. A clickable theorem map
+explains the six grouped proof steps, highlights their dependencies, links to
+the verified Lean source, and illustrates monotonicity, the exact threshold,
+and the exclusion of all dominated kernels with interactive sliders.
+
+Live site: https://mathiseveneasier.github.io/pinwheel-kernel-counterexample/
+
+All asset references
 are relative, so GitHub Pages project URLs work without a custom domain.
 No account, API key, backend, or AI service is needed by website visitors.
 
