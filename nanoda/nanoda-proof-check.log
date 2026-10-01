@@ -1,0 +1,26 @@
+theorem Pinwheel.original_feasible : Pinwheel.Feasible (Pinwheel.periods (OfNat.ofNat 36)) := _
+
+theorem Pinwheel.infeasible_35 : Not (Pinwheel.Feasible (Pinwheel.periods (OfNat.ofNat 35))) := _
+
+theorem Pinwheel.exact_threshold (b : Nat) :
+  Iff (Pinwheel.Feasible (Pinwheel.periods b)) (LE.le (OfNat.ofNat 36) b) :=
+  _
+
+theorem Pinwheel.kernel_counterexample :
+  And (Pinwheel.Feasible (Pinwheel.periods (OfNat.ofNat 36)))
+    (Not
+      (Exists
+        (fun (q : Pinwheel.Task → Nat) =>
+        And (forall (i : Pinwheel.Task), LE.le (q i) (Pinwheel.periods (OfNat.ofNat 36) i))
+          (And
+            (forall (i : Pinwheel.Task),
+            LE.le (q i) (HPow.hPow (OfNat.ofNat 2) (HSub.hSub (OfNat.ofNat 6) (OfNat.ofNat 1))))
+            (Pinwheel.Feasible q))))) :=
+  _
+
+axiom Quot.sound.{u} {α : Sort u} {r : α → α → Sort 0} {a b : α} :
+  r a b → Eq (Quot.mk r a) (Quot.mk r b)
+
+axiom propext {a b : Sort 0} : Iff a b → Eq a b
+
+Checked 6850 declarations with no errors

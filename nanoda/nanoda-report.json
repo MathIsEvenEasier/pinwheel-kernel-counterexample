@@ -1,0 +1,66 @@
+{
+  "status": "PASS",
+  "targets": [
+    "Pinwheel.original_feasible",
+    "Pinwheel.infeasible_35",
+    "Pinwheel.exact_threshold",
+    "Pinwheel.kernel_counterexample"
+  ],
+  "tool_pins": {
+    "lean": "4.34.1",
+    "rust": "1.97.1",
+    "exporter": "076e8e57707e813375e8f9da8bf989799ace9680",
+    "nanoda": "3a2407216ee84a75f9e1aead6803d0578be06ae7"
+  },
+  "rust_version": "rustc 1.97.1 (8bab26f4f 2026-07-14)",
+  "export_axioms": [
+    "Quot.sound",
+    "propext"
+  ],
+  "export_counts": {
+    "inductive": 77,
+    "def": 4788,
+    "thm": 1799,
+    "quot": 4,
+    "axiom": 2,
+    "opaque": 1
+  },
+  "export_bytes": 18692879,
+  "export_sha256": "23e06ace1f833b4964f3cb681bc5a55791d99b52bedc2ca3e8a95c85a4493184",
+  "unsafe_or_partial_declarations": [],
+  "checked_declarations": 6850,
+  "checker_seconds": 342.712,
+  "source_unmodified": true,
+  "exporter_changes": [
+    "lean-toolchain"
+  ],
+  "control_rejected": true,
+  "control_exit_code": 101,
+  "tool_sha256": {
+    "exporter": "8c5d64ba68f4d3a68b3bcb7e1c5f188e35ae573b29470b8d4530a62324c9ddd1",
+    "nanoda": "84a189b03676929a05fbf969f9b06cdb3ff865a4b0cee529980bf571112e9514"
+  },
+  "checker_config": {
+    "use_stdin": false,
+    "permitted_axioms": [
+      "propext",
+      "Quot.sound"
+    ],
+    "unpermitted_axiom_hard_error": true,
+    "unsafe_permit_all_axioms": false,
+    "num_threads": 1,
+    "nat_extension": true,
+    "string_extension": true,
+    "print_success_message": true,
+    "print_axioms": true,
+    "unknown_pp_declar_hard_error": true,
+    "pp_to_stdout": true,
+    "pp_options": {
+      "proofs": false,
+      "notation": false,
+      "width": 100
+    }
+  },
+  "formal_statement_independently_reviewed": false,
+  "export_gzip_sha256": "3de2524abfc4423f362978d70fcce7f0c919f1b7f9cf0e70eef466795a714318"
+}
