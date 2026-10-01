@@ -1,0 +1,37 @@
+{
+  "method": "BFS with tuple ages; Kahn topological elimination; longest-path ranks",
+  "cases": [
+    {
+      "deadlines": [
+        3,
+        4,
+        5,
+        20,
+        22,
+        32
+      ],
+      "states": 50881,
+      "edges": 97140,
+      "maximum_prefix_length": 99,
+      "certificate": "unsched-32.json.gz",
+      "sha256": "3ab1df3c37ad00e82a07524a153035ef3e68b5c93ae50894d1e6357a3ccd00b1",
+      "seconds": 0.609304
+    },
+    {
+      "deadlines": [
+        3,
+        4,
+        5,
+        20,
+        22,
+        35
+      ],
+      "states": 56284,
+      "edges": 107847,
+      "maximum_prefix_length": 101,
+      "certificate": "unsched-35.json.gz",
+      "sha256": "0d9ed9488d7f0153a622e436aad78afe2bfa28e96e9ab683f54be6e432fe3ae2",
+      "seconds": 0.665274
+    }
+  ]
+}

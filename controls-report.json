@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "controls": [
+    {
+      "control": "remove sole F from positive word",
+      "status": "REJECTED_AS_REQUIRED",
+      "reason": "missing task 5 in cyclic window beginning at 0"
+    },
+    {
+      "control": "remove initial state",
+      "status": "REJECTED_AS_REQUIRED",
+      "reason": "initial state absent"
+    },
+    {
+      "control": "remove a legal successor",
+      "status": "REJECTED_AS_REQUIRED",
+      "reason": "missing legal successor: certificate not closed"
+    },
+    {
+      "control": "make initial rank zero",
+      "status": "REJECTED_AS_REQUIRED",
+      "reason": "rank fails to decrease on a legal move"
+    },
+    {
+      "control": "substitute a different problem",
+      "status": "REJECTED_AS_REQUIRED",
+      "reason": "wrong negative instance"
+    }
+  ]
+}
