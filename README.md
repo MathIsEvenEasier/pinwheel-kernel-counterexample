@@ -10,7 +10,6 @@ This refutes Conjecture 2.3 (the Kernel Conjecture) in
 Gąsieniec, Smith and Wild, *Towards the 5/6-Density Conjecture of Pinwheel
 Scheduling* (2021 preprint; ALENEX 2022):
 https://arxiv.org/abs/2111.01784
-It does not refute the separate 5/6-density conjecture.
 The result bounds any universal six-task cap from below by 36; it does not
 show that 36 is a sufficient universal cap.
 
