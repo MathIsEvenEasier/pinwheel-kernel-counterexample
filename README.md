@@ -121,7 +121,7 @@ small, certified regression test for pinwheel scheduling implementations.
 
 ## Provenance and scope of review
 
-Codex (GPT-6 family; exact variant not recorded) discovered the example,
+OpenAI Codex (GPT-6 Astra) discovered the example,
 implemented the searches, certificates and separate checker, and developed
 the formalization under human direction. The human set the objective,
 supervised the workflow, and requested prior-work and formal checks.
