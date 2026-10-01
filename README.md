@@ -73,8 +73,11 @@ There are no custom axioms, sorry/admit, unsafe declarations, native_decide,
 or modifications to the kernel in this project. Lean also rejected the
 bad initial-rank control in `lean/corruption-control-azure.log`.
 No independent audit of the formal statement or peer review is claimed.
-An additional Nanoda replay is being attempted in Azure; no successful result
-is claimed until its report is available. The trusted computing base includes the standard Lean kernel
+Nanoda independently replayed the four endpoint theorems and their transitive
+dependencies on 2026-10-01: 6,850 declarations passed, with only `propext` and
+`Quot.sound` admitted. A deliberately corrupted proof was rejected. The
+checker source was unmodified. See `nanoda/README.md` and its pinned reports
+and export. Both Azure runs completed and their temporary resources were removed. The trusted computing base includes the standard Lean kernel
 and its standard axioms; this is not a claim that unknown kernel bugs are
 impossible.
 
