@@ -141,6 +141,11 @@ not establish priority or exhaust the literature. Original references:
 contains proof sources, certificates, checkers, and verification reports;
 no cloud account configuration or cached third-party papers are included.
 
+## Acknowledgments
+
+This work was inspired by Dr. Samuel Allen Alexander’s YouTube channel,
+[@xamualexander](https://www.youtube.com/@xamualexander).
+
 ## Interactive website
 
 `docs/` contains a self-contained interactive laboratory:
