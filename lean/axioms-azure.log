@@ -1,0 +1,4 @@
+'Pinwheel.original_feasible' depends on axioms: [propext, Quot.sound]
+'Pinwheel.infeasible_35' depends on axioms: [propext, Quot.sound]
+'Pinwheel.exact_threshold' depends on axioms: [propext, Quot.sound]
+'Pinwheel.kernel_counterexample' depends on axioms: [propext, Quot.sound]
