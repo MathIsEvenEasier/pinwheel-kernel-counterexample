@@ -143,7 +143,7 @@ no cloud account configuration or cached third-party papers are included.
 
 ## Interactive website
 
-`docs/` contains the self-contained English-language interactive laboratory:
+`docs/` contains a self-contained interactive laboratory:
 an editable 36-slot schedule, deadline controls, a finite-state game, and a
 JavaScript certificate verifier running in a Web Worker. A clickable theorem map
 explains the six grouped proof steps, highlights their dependencies, links to
