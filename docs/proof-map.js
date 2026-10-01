@@ -24,7 +24,7 @@
       extra:[['Result.lean',55,'capped_infeasible']]},
     {id:'result', title:'Kontrprzykład', short:'Hipoteza 2.3 jest fałszywa', formula:'Wykonalne(A₃₆) ∧ brak wymaganego jądra', deps:['witness','kernel'], file:'Result.lean', line:76, lemma:'kernel_counterexample',
       explanation:'Hipoteza wymagała odpowiedniego jądra dla każdej wykonalnej instancji. Mamy jedną wykonalną instancję i dowód, że żadne wymagane jądro do niej nie istnieje. To wystarcza do obalenia zdania ogólnego.',
-      detail:'<div class="conclusion-pair"><div><b>✓</b><strong>Plan dla A istnieje</strong><span>jawny cykl długości 36</span></div><span class="conjunction">∧</span><div><b>∅</b><strong>Wymaganych jąder brak</strong><span>każdy kandydat z limitem 32 odpada</span></div></div><p class="map-caption">Nie wynika stąd, że 36 wystarcza dla wszystkich instancji sześciu zadań. Hipoteza o gęstości 5/6 pozostaje poza zakresem tego wyniku.</p>', extra:[]}
+      detail:'<div class="conclusion-pair"><div><b>✓</b><strong>Plan dla A istnieje</strong><span>jawny cykl długości 36</span></div><span class="conjunction">∧</span><div><b>∅</b><strong>Wymaganych jąder brak</strong><span>każdy kandydat z limitem 32 odpada</span></div></div><p class="map-caption">Nie wynika stąd, że 36 wystarcza dla wszystkich instancji sześciu zadań.</p>', extra:[]}
   ];
   const byId = Object.fromEntries(nodes.map(n=>[n.id,n]));
   const paths = [
