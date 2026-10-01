@@ -144,7 +144,7 @@ no cloud account configuration or cached third-party papers are included.
 ## Acknowledgments
 
 This work was inspired by Dr. Samuel Allen Alexander’s YouTube channel,
-[@xamualexander](https://www.youtube.com/@xamualexander).
+[@xamualexander](https://www.youtube.com/@xamualexander). Still there.
 
 ## Interactive website
 
