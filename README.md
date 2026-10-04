@@ -13,6 +13,19 @@ https://arxiv.org/abs/2111.01784
 The result bounds any universal six-task cap from below by 36; it does not
 show that 36 is a sufficient universal cap.
 
+By [Proposition 2.4 of the same paper](https://arxiv.org/html/2111.01784#S2.SS1),
+this also refutes Conjecture 2.2, the **2^k Conjecture**: the claim that every
+loosely schedulable k-task instance admits a schedule with a holiday at
+least every 2^k days. Here a holiday is a day on which no task is executed.
+
+The consequence can be seen directly for the five-task instance
+`(3,4,5,20,22)`. Deleting task 6 from our periodic witness gives a valid
+schedule with holidays. If there were a schedule with a holiday in every
+32-day window (`2^5 = 32`), filling those holidays with task 6 would solve
+`(3,4,5,20,22,32)`, contradicting the existing infeasibility certificate.
+This is a mathematical consequence of the supplied witness and certificate;
+it is not a separately formalized Lean endpoint.
+
 ## Definition and argument
 
 A schedule selects one of the six tasks in each integer time slot. A task
