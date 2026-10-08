@@ -90,14 +90,12 @@ dependencies on 2026-10-01: 6,850 declarations passed, with only `propext` and
 `Quot.sound` admitted. A deliberately corrupted proof was rejected. The
 checker source was unmodified. See `nanoda/README.md` and its pinned reports
 and export. Both Azure runs completed and their temporary resources were removed. The trusted computing base includes the standard Lean kernel
-and its standard axioms; this is not a claim that unknown kernel bugs are
-impossible.
+and its standard axioms.
 
-To reproduce the full build, use an Azure Linux worker with resource and
-time limits and install the official Lean version pinned in
+To reproduce the full build, use a Linux worker with resource and time
+limits and install the official Lean version pinned in
 `lean/lean-toolchain`. The release URL and SHA-256 are in
-`lean/linux-release.json`. Full compilations and searches should not run on
-the original user's local workstation. The original run compiled sequentially
+`lean/linux-release.json`. The recorded Azure run compiled sequentially
 with one thread, a 22 GiB OS address-space limit, a 24 GiB service limit,
 a 120-second timeout per module, and a 30-minute overall driver limit; it
 took 460.135 seconds. Its temporary Azure resources were removed afterward.
@@ -119,10 +117,8 @@ for module in json.load(open('modules.json')):
 CHECK
 ```
 
-This is a reproduction recipe; the supplied build report records the actual
-completed run, not a newly executed build of this packaging step. Compiled
-`.olean` files are deliberately not supplied: reproduction should check the
-sources. `lean/generate_certificate.py` can regenerate the certificate source
+The build report records the run described above. The package contains
+source files; reproducing the build regenerates the compiled `.olean` files. `lean/generate_certificate.py` can regenerate the certificate source
 modules from `unsched-35.json.gz` if desired, but generation is not trusted
 as a proof. Lean checks the resulting certificate.
 
@@ -156,12 +152,11 @@ no cloud account configuration or cached third-party papers are included.
 
 ## Acknowledgments
 
-This work was inspired by Dr. Samuel Allen Alexander’s YouTube channel,
-[@xamualexander](https://www.youtube.com/@xamualexander). Still there.
+Research inspired by @xamualexander, Dr. Samuel Allen Alexander. Still there.
 
 ## Interactive website
 
-`docs/` contains a self-contained interactive laboratory:
+`docs/` contains the interactive site:
 an editable 36-slot schedule, deadline controls, a finite-state game, and a
 JavaScript certificate verifier running in a Web Worker. A four-step guided
 proof shows actual sliding windows in the witness, all six choices at a state
